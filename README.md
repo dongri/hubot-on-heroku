@@ -1,5 +1,6 @@
 # hubot
 
+```
 $ npm install -g yo
 $ npm install -g generator-hubot
 
@@ -25,11 +26,12 @@ Bot nameをhubotにするとエラーになるので、hubot以外にする。
           \____/    |   |
            | //|    +===+
             \//      |xx|
-
+```
 
 
 # create app on heroku (app name: hubot-on-heroku)
 
+```
 $ git init
 $ git add .
 $ git commit -m "Hubot"
@@ -41,6 +43,7 @@ $ git push heroku master
 $ heroku config:set HUBOT_SLACK_TOKEN=xoxb-****************************
 $ heroku config:set HEROKU_URL=https://hubot-on-heroku.herokuapp.com
 $ heroku config:set HUBOT_SLACK_BOTNAME=bot
+```
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
