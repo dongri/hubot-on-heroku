@@ -1,3 +1,49 @@
+# hubot
+
+$ npm install -g yo
+$ npm install -g generator-hubot
+
+
+$ mkdir hubot-on-heroku
+$ cd hubot-on-heroku
+$ yo hubot
+
+Bot nameをhubotにするとエラーになるので、hubot以外にする。
+
+
+                     _____________________________
+ _____              /                             \
+ \    \             |   Self-replication process   |
+ |    |    _____    |          complete...         |
+ |__\\|   /_____\   \     Good luck with that.    /
+   |//+  |[^_/\_]|   /----------------------------
+  |   | _|___@@__|__
+  +===+/  ///     \_\
+   | |_\ /// HUBOT/\\
+   |___/\//      /  \\
+         \      /   +---+
+          \____/    |   |
+           | //|    +===+
+            \//      |xx|
+
+
+
+# create app on heroku (app name: hubot-on-heroku)
+
+$ git init
+$ git add .
+$ git commit -m "Hubot"
+
+$ heroku git:remote -a hubot-on-heroku
+$ git push heroku master
+
+# set env
+$ heroku config:set HUBOT_SLACK_TOKEN=xoxb-****************************
+$ heroku config:set HEROKU_URL=https://hubot-on-heroku.herokuapp.com
+$ heroku config:set HUBOT_SLACK_BOTNAME=bot
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 # bot
 
 bot is a chat bot built on the [Hubot][hubot] framework. It was
