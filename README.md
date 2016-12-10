@@ -45,8 +45,6 @@ $ heroku config:set HEROKU_URL=https://hubot-on-heroku.herokuapp.com
 $ heroku config:set HUBOT_SLACK_BOTNAME=bot
 ```
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 # bot
 
 bot is a chat bot built on the [Hubot][hubot] framework. It was
